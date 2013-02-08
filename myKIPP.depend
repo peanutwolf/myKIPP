@@ -1,0 +1,39 @@
+# depslib dependency file v1.0
+1360154425 source:/home/peanutwolf/Документы/myKIPP/main.c
+	<avr/io.h>
+	<avr/interrupt.h>
+
+1360239853 source:/home/peanutwolf/Документы/myKIPP/RingBuffer.c
+	</home/peanutwolf/Документы/myKIPP/RingBuffer.h>
+
+1360239808 /home/peanutwolf/Документы/myKIPP/RingBuffer.h
+	<stdbool.h>
+	<stdint.h>
+
+1295653891 /usr/include/stdint.h
+	<features.h>
+	<bits/wchar.h>
+	<bits/wordsize.h>
+
+1295653849 /usr/include/features.h
+	<bits/predefs.h>
+	<sys/cdefs.h>
+	<gnu/stubs.h>
+
+1295653849 /usr/include/bits/predefs.h
+
+1295653914 /usr/include/sys/cdefs.h
+	<features.h>
+	<bits/wordsize.h>
+
+1295653891 /usr/include/bits/wordsize.h
+
+1295653849 /usr/include/gnu/stubs.h
+	<bits/wordsize.h>
+	<gnu/stubs-32.h>
+	<gnu/stubs-64.h>
+
+1295652990 /usr/include/gnu/stubs-32.h
+
+1295653900 /usr/include/bits/wchar.h
+
