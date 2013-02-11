@@ -1,5 +1,5 @@
 #include </home/peanutwolf/Документы/myKIPP/RingBuffer.h>
-
+//some changes
 void buf_push_char(char data){
    if(buf_pointer<=90){
        RING_BUFFER[buf_pointer] = data;
