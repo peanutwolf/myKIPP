@@ -9,6 +9,12 @@ Archive member included because of file (symbol)
 /usr/bin/../lib/gcc/avr/4.6.2/../../../../avr/lib/avr4/libc.a(strstr_P.o)
                               obj/Debug/main.o (strstr_P)
 
+Allocating common symbols
+Common symbol       size              file
+
+data                0x1               obj/Debug/main.o
+pnt                 0x2               obj/Debug/main.o
+
 Memory Configuration
 
 Name             Origin             Length             Attributes
@@ -121,7 +127,7 @@ LOAD /usr/bin/../lib/gcc/avr/4.6.2/avr4/libgcc.a
 .rela.plt
  *(.rela.plt)
 
-.text           0x00000000      0x40c
+.text           0x00000000      0x468
  *(.vectors)
  .vectors       0x00000000       0x26 /usr/bin/../lib/gcc/avr/4.6.2/../../../../avr/lib/avr4/crtm8.o
                 0x00000000                __vectors
@@ -197,33 +203,34 @@ LOAD /usr/bin/../lib/gcc/avr/4.6.2/avr4/libgcc.a
                 0x000000a2                __vector_10
                 0x000000a2                __vector_16
                 0x000000a2                __vector_18
- .text          0x000000a4       0x72 obj/Debug/main.o
+ .text          0x000000a4       0xac obj/Debug/main.o
                 0x000000a4                main
- .text          0x00000116      0x2be obj/Debug/usr/include/uart.o
-                0x00000116                __vector_11
-                0x000001aa                __vector_12
-                0x0000022c                uart_init
-                0x0000029e                uart_getc
-                0x000002f2                uart_putc
-                0x00000346                uart_puts
-                0x00000384                uart_puts_p
- .text          0x000003d4        0x0 /usr/bin/../lib/gcc/avr/4.6.2/avr4/libgcc.a(_exit.o)
- .text          0x000003d4        0x0 /usr/bin/../lib/gcc/avr/4.6.2/avr4/libgcc.a(_copy_data.o)
- .text          0x000003d4        0x0 /usr/bin/../lib/gcc/avr/4.6.2/avr4/libgcc.a(_clear_bss.o)
- .text          0x000003d4        0x0 /usr/bin/../lib/gcc/avr/4.6.2/../../../../avr/lib/avr4/libc.a(strstr_P.o)
-                0x000003d4                . = ALIGN (0x2)
+ .text          0x00000150      0x2e0 obj/Debug/usr/include/uart.o
+                0x00000150                __vector_11
+                0x000001e4                __vector_12
+                0x00000266                uart_init
+                0x000002d8                uart_getc
+                0x0000032c                uart_putc
+                0x00000380                uart_puts
+                0x000003be                uart_puts_p
+                0x0000040e                get_UART_RxBuf
+ .text          0x00000430        0x0 /usr/bin/../lib/gcc/avr/4.6.2/avr4/libgcc.a(_exit.o)
+ .text          0x00000430        0x0 /usr/bin/../lib/gcc/avr/4.6.2/avr4/libgcc.a(_copy_data.o)
+ .text          0x00000430        0x0 /usr/bin/../lib/gcc/avr/4.6.2/avr4/libgcc.a(_clear_bss.o)
+ .text          0x00000430        0x0 /usr/bin/../lib/gcc/avr/4.6.2/../../../../avr/lib/avr4/libc.a(strstr_P.o)
+                0x00000430                . = ALIGN (0x2)
  *(.text.*)
- .text.libgcc   0x000003d4        0x0 /usr/bin/../lib/gcc/avr/4.6.2/avr4/libgcc.a(_exit.o)
- .text.libgcc   0x000003d4        0x0 /usr/bin/../lib/gcc/avr/4.6.2/avr4/libgcc.a(_copy_data.o)
- .text.libgcc   0x000003d4        0x0 /usr/bin/../lib/gcc/avr/4.6.2/avr4/libgcc.a(_clear_bss.o)
+ .text.libgcc   0x00000430        0x0 /usr/bin/../lib/gcc/avr/4.6.2/avr4/libgcc.a(_exit.o)
+ .text.libgcc   0x00000430        0x0 /usr/bin/../lib/gcc/avr/4.6.2/avr4/libgcc.a(_copy_data.o)
+ .text.libgcc   0x00000430        0x0 /usr/bin/../lib/gcc/avr/4.6.2/avr4/libgcc.a(_clear_bss.o)
  .text.avr-libc
-                0x000003d4       0x34 /usr/bin/../lib/gcc/avr/4.6.2/../../../../avr/lib/avr4/libc.a(strstr_P.o)
-                0x000003d4                strstr_P
-                0x00000408                . = ALIGN (0x2)
+                0x00000430       0x34 /usr/bin/../lib/gcc/avr/4.6.2/../../../../avr/lib/avr4/libc.a(strstr_P.o)
+                0x00000430                strstr_P
+                0x00000464                . = ALIGN (0x2)
  *(.fini9)
- .fini9         0x00000408        0x0 /usr/bin/../lib/gcc/avr/4.6.2/avr4/libgcc.a(_exit.o)
-                0x00000408                exit
-                0x00000408                _exit
+ .fini9         0x00000464        0x0 /usr/bin/../lib/gcc/avr/4.6.2/avr4/libgcc.a(_exit.o)
+                0x00000464                exit
+                0x00000464                _exit
  *(.fini9)
  *(.fini8)
  *(.fini8)
@@ -242,11 +249,11 @@ LOAD /usr/bin/../lib/gcc/avr/4.6.2/avr4/libgcc.a
  *(.fini1)
  *(.fini1)
  *(.fini0)
- .fini0         0x00000408        0x4 /usr/bin/../lib/gcc/avr/4.6.2/avr4/libgcc.a(_exit.o)
+ .fini0         0x00000464        0x4 /usr/bin/../lib/gcc/avr/4.6.2/avr4/libgcc.a(_exit.o)
  *(.fini0)
-                0x0000040c                _etext = .
+                0x00000468                _etext = .
 
-.data           0x00800060        0x4 load address 0x0000040c
+.data           0x00800060        0x4 load address 0x00000468
                 0x00800060                PROVIDE (__data_start, .)
  *(.data)
  .data          0x00800060        0x0 /usr/bin/../lib/gcc/avr/4.6.2/../../../../avr/lib/avr4/crtm8.o
@@ -265,28 +272,31 @@ LOAD /usr/bin/../lib/gcc/avr/4.6.2/avr4/libgcc.a
                 0x00800064                _edata = .
                 0x00800064                PROVIDE (__data_end, .)
 
-.bss            0x00800064       0x45
+.bss            0x00800064       0x4a
                 0x00800064                PROVIDE (__bss_start, .)
  *(.bss)
  .bss           0x00800064        0x0 /usr/bin/../lib/gcc/avr/4.6.2/../../../../avr/lib/avr4/crtm8.o
  .bss           0x00800064        0x0 obj/Debug/main.o
- .bss           0x00800064       0x45 obj/Debug/usr/include/uart.o
- .bss           0x008000a9        0x0 /usr/bin/../lib/gcc/avr/4.6.2/avr4/libgcc.a(_exit.o)
- .bss           0x008000a9        0x0 /usr/bin/../lib/gcc/avr/4.6.2/avr4/libgcc.a(_copy_data.o)
- .bss           0x008000a9        0x0 /usr/bin/../lib/gcc/avr/4.6.2/avr4/libgcc.a(_clear_bss.o)
- .bss           0x008000a9        0x0 /usr/bin/../lib/gcc/avr/4.6.2/../../../../avr/lib/avr4/libc.a(strstr_P.o)
+ .bss           0x00800064       0x47 obj/Debug/usr/include/uart.o
+ .bss           0x008000ab        0x0 /usr/bin/../lib/gcc/avr/4.6.2/avr4/libgcc.a(_exit.o)
+ .bss           0x008000ab        0x0 /usr/bin/../lib/gcc/avr/4.6.2/avr4/libgcc.a(_copy_data.o)
+ .bss           0x008000ab        0x0 /usr/bin/../lib/gcc/avr/4.6.2/avr4/libgcc.a(_clear_bss.o)
+ .bss           0x008000ab        0x0 /usr/bin/../lib/gcc/avr/4.6.2/../../../../avr/lib/avr4/libc.a(strstr_P.o)
  *(.bss*)
  *(COMMON)
-                0x008000a9                PROVIDE (__bss_end, .)
-                0x0000040c                __data_load_start = LOADADDR (.data)
-                0x00000410                __data_load_end = (__data_load_start + SIZEOF (.data))
+ COMMON         0x008000ab        0x3 obj/Debug/main.o
+                0x008000ab                data
+                0x008000ac                pnt
+                0x008000ae                PROVIDE (__bss_end, .)
+                0x00000468                __data_load_start = LOADADDR (.data)
+                0x0000046c                __data_load_end = (__data_load_start + SIZEOF (.data))
 
-.noinit         0x008000a9        0x0
-                0x008000a9                PROVIDE (__noinit_start, .)
+.noinit         0x008000ae        0x0
+                0x008000ae                PROVIDE (__noinit_start, .)
  *(.noinit*)
-                0x008000a9                PROVIDE (__noinit_end, .)
-                0x008000a9                _end = .
-                0x008000a9                PROVIDE (__heap_start, .)
+                0x008000ae                PROVIDE (__noinit_end, .)
+                0x008000ae                _end = .
+                0x008000ae                PROVIDE (__heap_start, .)
 
 .eeprom         0x00810000        0x0
  *(.eeprom*)
@@ -349,38 +359,38 @@ LOAD /usr/bin/../lib/gcc/avr/4.6.2/avr4/libgcc.a
 .debug_pubnames
  *(.debug_pubnames)
 
-.debug_info     0x00000000      0x461
+.debug_info     0x00000000      0x4db
  *(.debug_info)
- .debug_info    0x00000000      0x19b obj/Debug/main.o
- .debug_info    0x0000019b      0x2c6 obj/Debug/usr/include/uart.o
+ .debug_info    0x00000000      0x1df obj/Debug/main.o
+ .debug_info    0x000001df      0x2fc obj/Debug/usr/include/uart.o
  *(.gnu.linkonce.wi.*)
 
-.debug_abbrev   0x00000000      0x1a0
+.debug_abbrev   0x00000000      0x1e0
  *(.debug_abbrev)
- .debug_abbrev  0x00000000       0xa3 obj/Debug/main.o
- .debug_abbrev  0x000000a3       0xfd obj/Debug/usr/include/uart.o
+ .debug_abbrev  0x00000000       0xce obj/Debug/main.o
+ .debug_abbrev  0x000000ce      0x112 obj/Debug/usr/include/uart.o
 
-.debug_line     0x00000000      0x506
+.debug_line     0x00000000      0x50e
  *(.debug_line)
- .debug_line    0x00000000      0x2bf obj/Debug/main.o
- .debug_line    0x000002bf      0x247 obj/Debug/usr/include/uart.o
+ .debug_line    0x00000000      0x2c3 obj/Debug/main.o
+ .debug_line    0x000002c3      0x24b obj/Debug/usr/include/uart.o
 
-.debug_frame    0x00000000      0x17c
+.debug_frame    0x00000000      0x19c
  *(.debug_frame)
  .debug_frame   0x00000000       0x34 obj/Debug/main.o
- .debug_frame   0x00000034      0x148 obj/Debug/usr/include/uart.o
+ .debug_frame   0x00000034      0x168 obj/Debug/usr/include/uart.o
 
-.debug_str      0x00000000      0x1c0
+.debug_str      0x00000000      0x1ce
  *(.debug_str)
- .debug_str     0x00000000       0xa4 obj/Debug/main.o
-                                 0xdd (size before relaxing)
- .debug_str     0x000000a4      0x11c obj/Debug/usr/include/uart.o
-                                0x1c4 (size before relaxing)
+ .debug_str     0x00000000       0xa9 obj/Debug/main.o
+                                 0xe2 (size before relaxing)
+ .debug_str     0x000000a9      0x125 obj/Debug/usr/include/uart.o
+                                0x1dd (size before relaxing)
 
-.debug_loc      0x00000000      0x310
+.debug_loc      0x00000000      0x34b
  *(.debug_loc)
  .debug_loc     0x00000000       0x48 obj/Debug/main.o
- .debug_loc     0x00000048      0x2c8 obj/Debug/usr/include/uart.o
+ .debug_loc     0x00000048      0x303 obj/Debug/usr/include/uart.o
 
 .debug_macinfo  0x00000000    0x125e9
  *(.debug_macinfo)
@@ -434,10 +444,14 @@ __vector_9                                        /usr/bin/../lib/gcc/avr/4.6.2/
 __vector_default                                  /usr/bin/../lib/gcc/avr/4.6.2/../../../../avr/lib/avr4/crtm8.o
 __vectors                                         /usr/bin/../lib/gcc/avr/4.6.2/../../../../avr/lib/avr4/crtm8.o
 _exit                                             /usr/bin/../lib/gcc/avr/4.6.2/avr4/libgcc.a(_exit.o)
+data                                              obj/Debug/main.o
 exit                                              /usr/bin/../lib/gcc/avr/4.6.2/avr4/libgcc.a(_exit.o)
                                                   /usr/bin/../lib/gcc/avr/4.6.2/../../../../avr/lib/avr4/crtm8.o
+get_UART_RxBuf                                    obj/Debug/usr/include/uart.o
+                                                  obj/Debug/main.o
 main                                              obj/Debug/main.o
                                                   /usr/bin/../lib/gcc/avr/4.6.2/../../../../avr/lib/avr4/crtm8.o
+pnt                                               obj/Debug/main.o
 strstr_P                                          /usr/bin/../lib/gcc/avr/4.6.2/../../../../avr/lib/avr4/libc.a(strstr_P.o)
                                                   obj/Debug/main.o
 uart_getc                                         obj/Debug/usr/include/uart.o
@@ -446,5 +460,6 @@ uart_init                                         obj/Debug/usr/include/uart.o
                                                   obj/Debug/main.o
 uart_putc                                         obj/Debug/usr/include/uart.o
 uart_puts                                         obj/Debug/usr/include/uart.o
+                                                  obj/Debug/main.o
 uart_puts_p                                       obj/Debug/usr/include/uart.o
                                                   obj/Debug/main.o

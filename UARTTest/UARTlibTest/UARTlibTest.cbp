@@ -12,13 +12,14 @@
 				<Option type="1" />
 				<Option compiler="avrgcc" />
 				<Compiler>
-					<Add option="-g" />
+					<Add option="-g3" />
 				</Compiler>
 			</Target>
 		</Build>
 		<Compiler>
-			<Add option="-Wall" />
 			<Add option="-mmcu=atmega8" />
+			<Add option="-Wall" />
+			<Add option="-g3" />
 			<Add option="-DF_CPU=8000000UL" />
 		</Compiler>
 		<Linker>
@@ -31,6 +32,9 @@
 			<Add after="avr-objdump -h -S $(TARGET_OUTPUT_FILE) &gt; $(TARGET_OUTPUT_FILE).lss" />
 		</ExtraCommands>
 		<Unit filename="main.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../../../../usr/include/uart.c">
 			<Option compilerVar="CC" />
 		</Unit>
 		<Extensions>

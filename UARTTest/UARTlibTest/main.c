@@ -28,7 +28,8 @@ DESCRIPTION:
 
 const char ATcheck[] PROGMEM = "AT";
 const char AT_OK[] PROGMEM = "OK";
-
+unsigned char* pnt;
+unsigned char data;
 uint8_t check_at_answ();
 
 
@@ -106,7 +107,10 @@ int main(void)
              */
             // UART_RxBuf[0]=0x30;
             if(strstr_P("OK", AT_OK)){
-           // uart_putc(UART_RxBuf[3]);
+                pnt = get_UART_RxBuf();
+                pnt++;
+                data = *pnt;
+               uart_puts((const char *)pnt);
             }
 
         }
