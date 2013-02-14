@@ -1,10 +1,11 @@
 # depslib dependency file v1.0
-1360671048 source:/home/peanutwolf/GitRepo/UARTTest/UARTlibTest/main.c
+1360846707 source:/home/peanutwolf/GitRepo/UARTTest/UARTlibTest/main.c
 	<stdlib.h>
 	<avr/io.h>
 	<avr/interrupt.h>
 	<avr/pgmspace.h>
 	<string.h>
+	<util/delay.h>
 	<uart.h>
 
 1360665015 /usr/avr/include/uart.h
@@ -17,9 +18,9 @@
 
 1360664949 /home/peanutwolf/GitRepo/UARTlib/uart.h
 
-1360671211 /usr/include/uart.h
+1360845039 /usr/include/uart.h
 
-1360673192 source:/usr/include/uart.c
+1360845017 source:/usr/include/uart.c
 	<avr/io.h>
 	<avr/interrupt.h>
 	<avr/pgmspace.h>

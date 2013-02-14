@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
 <CodeBlocks_layout_file>
 	<ActiveTarget name="Debug" />
-	<File name="main.c" open="1" top="1" tabpos="1">
-		<Cursor position="3086" topLine="82" />
+	<File name="main.c" open="1" top="1" tabpos="0">
+		<Cursor position="2728" topLine="85" />
 	</File>
-	<File name="../../../../../usr/include/uart.c" open="0" top="0" tabpos="0">
-		<Cursor position="16104" topLine="464" />
+	<File name="../../../../../usr/include/uart.c" open="0" top="0" tabpos="2">
+		<Cursor position="15517" topLine="394" />
 	</File>
 </CodeBlocks_layout_file>
