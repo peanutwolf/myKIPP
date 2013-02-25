@@ -13,5 +13,4 @@ void buf_push_char(char data);
 char buf_pop_char();
 bool buf_isEmpty();
 
-
 #endif // RINGBUFFER_H_INCLUDED
