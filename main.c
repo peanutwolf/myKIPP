@@ -8,7 +8,7 @@
 volatile char *sramAdress;
 volatile uint8_t temp_pointer;
 bool flag = true;
-// some comments for GIT
+
 void writeSram(char data){
     *sramAdress = data;
     sramAdress++;
