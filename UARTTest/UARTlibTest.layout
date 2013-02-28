@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_layout_file>
+	<ActiveTarget name="Debug" />
+	<File name="AT_Lib.h" open="1" top="0" tabpos="3">
+		<Cursor position="245" topLine="0" />
+	</File>
+	<File name="AT_lib.c" open="1" top="1" tabpos="4">
+		<Cursor position="227" topLine="0" />
+	</File>
+	<File name="Test.c" open="0" top="0" tabpos="2">
+		<Cursor position="18" topLine="0" />
+	</File>
+	<File name="Test.h" open="0" top="0" tabpos="3">
+		<Cursor position="66" topLine="0" />
+	</File>
+	<File name="main.c" open="1" top="0" tabpos="1">
+		<Cursor position="960" topLine="18" />
+	</File>
+	<File name="uart.c" open="1" top="0" tabpos="5">
+		<Cursor position="16201" topLine="465" />
+	</File>
+	<File name="uart.h" open="1" top="0" tabpos="2">
+		<Cursor position="0" topLine="157" />
+	</File>
+</CodeBlocks_layout_file>

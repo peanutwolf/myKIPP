@@ -1,0 +1,4 @@
+# depslib dependency file v1.0
+1361260166 source:/home/peanutwolf/GitRepo/UART/main.c
+	<avr/io.h>
+

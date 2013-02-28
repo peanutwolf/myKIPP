@@ -1,0 +1,70 @@
+# depslib dependency file v1.0
+1360924789 source:/home/peanutwolf/GitRepo/UARTTest/UARTlibTest/main.c
+	<stdlib.h>
+	<avr/io.h>
+	<avr/interrupt.h>
+	<avr/pgmspace.h>
+	<util/delay.h>
+	<uart.h>
+	<Test.h>
+	<AT_Lib.h>
+
+1360665015 /usr/avr/include/uart.h
+
+1360668258 source:/home/peanutwolf/GitRepo/UARTlib/uart.c
+	<avr/io.h>
+	<avr/interrupt.h>
+	<avr/pgmspace.h>
+	"uart.h"
+
+1360664949 /home/peanutwolf/GitRepo/UARTlib/uart.h
+
+1361249810 /usr/include/uart.h
+
+1361249788 source:/usr/include/uart.c
+	<avr/io.h>
+	<avr/interrupt.h>
+	<avr/pgmspace.h>
+	"uart.h"
+
+1360924499 /home/peanutwolf/GitRepo/UARTTest/UARTlibTest/AT_Lib.h
+	<uart.h>
+
+1360924501 /home/peanutwolf/GitRepo/UARTTest/UARTlibTest/Test.h
+
+1362035394 source:/home/peanutwolf/GitRepo/UARTTest/main.c
+	<stdlib.h>
+	<avr/io.h>
+	<avr/interrupt.h>
+	<avr/pgmspace.h>
+	"uart.h"
+	"AT_Lib.h"
+
+1361255954 /home/peanutwolf/GitRepo/UARTTest/Test.h
+
+1362036373 /home/peanutwolf/GitRepo/UARTTest/AT_Lib.h
+	<stdlib.h>
+	<avr/io.h>
+	<string.h>
+	"uart.h"
+
+1361251360 /home/peanutwolf/GitRepo/UARTTest/uart.h
+
+1361278868 source:/home/peanutwolf/GitRepo/UARTTest/uart.c
+	<avr/io.h>
+	<avr/interrupt.h>
+	<avr/pgmspace.h>
+	"uart.h"
+
+1361279327 source:/home/peanutwolf/GitRepo/UARTTest/AT_lib.c
+	"AT_Lib.h"
+	<avr/pgmspace.h>
+
+1361256329 source:/home/peanutwolf/GitRepo/UARTTest/Test.c
+	"Test.h"
+	<avr/io.h>
+
+1361255954 source:/home/peanutwolf/GitRepo/UARTTest/Test.h
+
+1361251360 source:/home/peanutwolf/GitRepo/UARTTest/uart.h
+

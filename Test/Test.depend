@@ -1,0 +1,12 @@
+# depslib dependency file v1.0
+1361261082 source:/home/peanutwolf/GitRepo/Test/main.c
+	<avr/io.h>
+
+1361255554 /home/peanutwolf/GitRepo/Test/Lib.h
+	<avr/io.h>
+
+1361249810 /usr/include/uart.h
+
+1361260569 source:/home/peanutwolf/GitRepo/Test/Lib.c
+	"Lib.h"
+
